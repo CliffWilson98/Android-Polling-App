@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_blue_mdpi"
+    tools:context=".AnswerQuestionActivity"
+    android:weightSum="9">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:textSize="@dimen/prompt_text_size"
+        android:gravity="center"
+        android:id="@+id/questionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:textSize="@dimen/prompt_text_size"
+        android:gravity="center"
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_weight="3"/>
+
+    <EditText
+        android:textSize="@dimen/prompt_text_size"
+        android:gravity="center"
+        android:hint="@string/enterAnswerHint"
+        android:id="@+id/questionAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_weight="3"/>
+
+    <Button
+        android:textSize="@dimen/prompt_text_size"
+        android:id="@+id/submitButton"
+        android:text="@string/submitButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>
